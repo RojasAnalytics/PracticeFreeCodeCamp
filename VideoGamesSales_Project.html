@@ -8013,31 +8013,6 @@ dtype: object</pre>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d1bf825a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="green-divider" src="https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png"/></p>
-<h4 id=""><a class="anchor-link" href="#">¶</a></h4><p><strong>Dia 2</strong></p>
-<p>Tema del Día: Entender a fondo la diferencia y el poder de .loc[], .iloc[] y el filtrado booleano.</p>
-<p>Tarea: En celdas nuevas, escribe el código necesario para resolver los siguientes desafíos:</p>
-<ol>
-<li><p>Crea un nuevo DataFrame llamado juegos_recientes que contenga solo los juegos lanzados después del año 2010.</p>
-</li>
-<li><p>Crea un nuevo DataFrame llamado juegos_wii que contenga todos los juegos de la plataforma "Wii".</p>
-</li>
-<li><p>Crea un DataFrame final llamado hits_de_nintendo que cumpla dos condiciones a la vez:</p>
-<ul>
-<li>Que su Publisher sea "Nintendo". Y que sus ventas en Norteamérica (NA_Sales) sean mayores a 10 millones.</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3a97c9ad">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -8053,7 +8028,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">10</span><span class="p">]</span>
@@ -8067,7 +8042,7 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[26]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>'Nintendogs'</pre>
 </div>
@@ -8079,7 +8054,7 @@ dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Name'</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">11</span><span class="p">]</span>
@@ -8093,7 +8068,7 @@ dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>5                        Tetris
 6         New Super Mario Bros.
@@ -8112,7 +8087,7 @@ Name: Name, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Platform'</span><span class="p">,</span><span class="s1">'Global_Sales'</span><span class="p">]]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">5</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
@@ -8126,7 +8101,7 @@ Name: Name, dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8200,7 +8175,7 @@ Name: Name, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
@@ -8214,7 +8189,7 @@ Name: Name, dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[ ]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>Rank                     1
 Name            Wii Sports
@@ -8237,7 +8212,7 @@ Name: 0, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
@@ -8251,7 +8226,7 @@ Name: 0, dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8367,7 +8342,7 @@ Name: 0, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="p">[[</span><span class="s1">'Name'</span><span class="p">,</span><span class="s1">'Platform'</span><span class="p">,</span><span class="s1">'Year'</span><span class="p">]]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">16593</span><span class="p">:</span><span class="mi">16598</span><span class="p">]</span>
@@ -8381,7 +8356,7 @@ Name: 0, dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[37]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8449,7 +8424,7 @@ Name: 0, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_videogames</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Genre'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Sports'</span><span class="p">]</span>
@@ -8463,7 +8438,7 @@ Name: 0, dtype: object</pre>
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8659,7 +8634,696 @@ Name: 0, dtype: object</pre>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2cb686fc">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d1bf825a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="green-divider" src="https://user-images.githubusercontent.com/7065401/52071924-c003ad80-2562-11e9-8297-1c6595f8a7ff.png"/></p>
+<h4 id=""><a class="anchor-link" href="#">¶</a></h4><p><strong>Dia 2</strong></p>
+<p>Tema del Día: Entender a fondo la diferencia y el poder de .loc[], .iloc[] y el filtrado booleano.</p>
+<p>Tarea: En celdas nuevas, escribe el código necesario para resolver los siguientes desafíos:</p>
+<ol>
+<li><p>Crea un nuevo DataFrame llamado juegos_recientes que contenga solo los juegos lanzados después del año 2010.</p>
+</li>
+<li><p>Crea un nuevo DataFrame llamado juegos_wii que contenga todos los juegos de la plataforma "Wii".</p>
+</li>
+<li><p>Crea un DataFrame final llamado hits_de_nintendo que cumpla dos condiciones a la vez:</p>
+<ul>
+<li>Que su Publisher sea "Nintendo". Y que sus ventas en Norteamérica (NA_Sales) sean mayores a 10 millones.</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=36ed36c5">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">juegos_recientes</span> <span class="o">=</span> <span class="n">df_videogames</span><span class="p">[</span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Year'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">2010</span><span class="p">]</span>
+
+<span class="n">juegos_recientes</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Rank</th>
+<th>Name</th>
+<th>Platform</th>
+<th>Year</th>
+<th>Genre</th>
+<th>Publisher</th>
+<th>NA_Sales</th>
+<th>EU_Sales</th>
+<th>JP_Sales</th>
+<th>Other_Sales</th>
+<th>Global_Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>15</th>
+<td>16</td>
+<td>Kinect Adventures!</td>
+<td>X360</td>
+<td>2010.0</td>
+<td>Misc</td>
+<td>Microsoft Game Studios</td>
+<td>14.97</td>
+<td>4.94</td>
+<td>0.24</td>
+<td>1.67</td>
+<td>21.82</td>
+</tr>
+<tr>
+<th>16</th>
+<td>17</td>
+<td>Grand Theft Auto V</td>
+<td>PS3</td>
+<td>2013.0</td>
+<td>Action</td>
+<td>Take-Two Interactive</td>
+<td>7.01</td>
+<td>9.27</td>
+<td>0.97</td>
+<td>4.14</td>
+<td>21.40</td>
+</tr>
+<tr>
+<th>23</th>
+<td>24</td>
+<td>Grand Theft Auto V</td>
+<td>X360</td>
+<td>2013.0</td>
+<td>Action</td>
+<td>Take-Two Interactive</td>
+<td>9.63</td>
+<td>5.31</td>
+<td>0.06</td>
+<td>1.38</td>
+<td>16.38</td>
+</tr>
+<tr>
+<th>26</th>
+<td>27</td>
+<td>Pokemon Black/Pokemon White</td>
+<td>DS</td>
+<td>2010.0</td>
+<td>Role-Playing</td>
+<td>Nintendo</td>
+<td>5.57</td>
+<td>3.28</td>
+<td>5.65</td>
+<td>0.82</td>
+<td>15.32</td>
+</tr>
+<tr>
+<th>29</th>
+<td>30</td>
+<td>Call of Duty: Modern Warfare 3</td>
+<td>X360</td>
+<td>2011.0</td>
+<td>Shooter</td>
+<td>Activision</td>
+<td>9.03</td>
+<td>4.28</td>
+<td>0.13</td>
+<td>1.32</td>
+<td>14.76</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>16578</th>
+<td>16581</td>
+<td>Outdoors Unleashed: Africa 3D</td>
+<td>3DS</td>
+<td>2011.0</td>
+<td>Sports</td>
+<td>Mastiff</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16581</th>
+<td>16584</td>
+<td>Fit &amp; Fun</td>
+<td>Wii</td>
+<td>2011.0</td>
+<td>Sports</td>
+<td>Unknown</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16585</th>
+<td>16588</td>
+<td>Breach</td>
+<td>PC</td>
+<td>2011.0</td>
+<td>Shooter</td>
+<td>Destineer</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16589</th>
+<td>16592</td>
+<td>Chou Ezaru wa Akai Hana: Koi wa Tsuki ni Shiru...</td>
+<td>PSV</td>
+<td>2016.0</td>
+<td>Action</td>
+<td>dramatic create</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16596</th>
+<td>16599</td>
+<td>Know How 2</td>
+<td>DS</td>
+<td>2010.0</td>
+<td>Puzzle</td>
+<td>7G//AMES</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p>5145 rows × 11 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9a3e6fe0">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">juegos_wii</span> <span class="o">=</span> <span class="n">df_videogames</span><span class="p">[</span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Platform'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Wii'</span><span class="p">]</span>
+
+<span class="n">juegos_wii</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Rank</th>
+<th>Name</th>
+<th>Platform</th>
+<th>Year</th>
+<th>Genre</th>
+<th>Publisher</th>
+<th>NA_Sales</th>
+<th>EU_Sales</th>
+<th>JP_Sales</th>
+<th>Other_Sales</th>
+<th>Global_Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>Wii Sports</td>
+<td>Wii</td>
+<td>2006.0</td>
+<td>Sports</td>
+<td>Nintendo</td>
+<td>41.49</td>
+<td>29.02</td>
+<td>3.77</td>
+<td>8.46</td>
+<td>82.74</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>Mario Kart Wii</td>
+<td>Wii</td>
+<td>2008.0</td>
+<td>Racing</td>
+<td>Nintendo</td>
+<td>15.85</td>
+<td>12.88</td>
+<td>3.79</td>
+<td>3.31</td>
+<td>35.82</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>Wii Sports Resort</td>
+<td>Wii</td>
+<td>2009.0</td>
+<td>Sports</td>
+<td>Nintendo</td>
+<td>15.75</td>
+<td>11.01</td>
+<td>3.28</td>
+<td>2.96</td>
+<td>33.00</td>
+</tr>
+<tr>
+<th>7</th>
+<td>8</td>
+<td>Wii Play</td>
+<td>Wii</td>
+<td>2006.0</td>
+<td>Misc</td>
+<td>Nintendo</td>
+<td>14.03</td>
+<td>9.20</td>
+<td>2.93</td>
+<td>2.85</td>
+<td>29.02</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9</td>
+<td>New Super Mario Bros. Wii</td>
+<td>Wii</td>
+<td>2009.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>14.59</td>
+<td>7.06</td>
+<td>4.70</td>
+<td>2.26</td>
+<td>28.62</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>16517</th>
+<td>16520</td>
+<td>Teenage Mutant Ninja Turtles</td>
+<td>Wii</td>
+<td>2007.0</td>
+<td>Action</td>
+<td>Konami Digital Entertainment</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16552</th>
+<td>16555</td>
+<td>Mahou Sensei Negima!? Neo-Pactio Fight!!</td>
+<td>Wii</td>
+<td>2007.0</td>
+<td>Fighting</td>
+<td>Marvelous Interactive</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16573</th>
+<td>16576</td>
+<td>Mini Desktop Racing</td>
+<td>Wii</td>
+<td>2007.0</td>
+<td>Racing</td>
+<td>Popcorn Arcade</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16574</th>
+<td>16577</td>
+<td>Yattaman Wii: BikkuriDokkiri Machine de Mou Ra...</td>
+<td>Wii</td>
+<td>2008.0</td>
+<td>Racing</td>
+<td>Takara Tomy</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+<tr>
+<th>16581</th>
+<td>16584</td>
+<td>Fit &amp; Fun</td>
+<td>Wii</td>
+<td>2011.0</td>
+<td>Sports</td>
+<td>Unknown</td>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>0.01</td>
+</tr>
+</tbody>
+</table>
+<p>1325 rows × 11 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8c207ea8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">hits_de_nintendo</span> <span class="o">=</span> <span class="n">df_videogames</span><span class="p">[(</span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'Publisher'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Nintendo'</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_videogames</span><span class="p">[</span><span class="s1">'NA_Sales'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)]</span>
+
+<span class="n">hits_de_nintendo</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>Rank</th>
+<th>Name</th>
+<th>Platform</th>
+<th>Year</th>
+<th>Genre</th>
+<th>Publisher</th>
+<th>NA_Sales</th>
+<th>EU_Sales</th>
+<th>JP_Sales</th>
+<th>Other_Sales</th>
+<th>Global_Sales</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>1</td>
+<td>Wii Sports</td>
+<td>Wii</td>
+<td>2006.0</td>
+<td>Sports</td>
+<td>Nintendo</td>
+<td>41.49</td>
+<td>29.02</td>
+<td>3.77</td>
+<td>8.46</td>
+<td>82.74</td>
+</tr>
+<tr>
+<th>1</th>
+<td>2</td>
+<td>Super Mario Bros.</td>
+<td>NES</td>
+<td>1985.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>29.08</td>
+<td>3.58</td>
+<td>6.81</td>
+<td>0.77</td>
+<td>40.24</td>
+</tr>
+<tr>
+<th>2</th>
+<td>3</td>
+<td>Mario Kart Wii</td>
+<td>Wii</td>
+<td>2008.0</td>
+<td>Racing</td>
+<td>Nintendo</td>
+<td>15.85</td>
+<td>12.88</td>
+<td>3.79</td>
+<td>3.31</td>
+<td>35.82</td>
+</tr>
+<tr>
+<th>3</th>
+<td>4</td>
+<td>Wii Sports Resort</td>
+<td>Wii</td>
+<td>2009.0</td>
+<td>Sports</td>
+<td>Nintendo</td>
+<td>15.75</td>
+<td>11.01</td>
+<td>3.28</td>
+<td>2.96</td>
+<td>33.00</td>
+</tr>
+<tr>
+<th>4</th>
+<td>5</td>
+<td>Pokemon Red/Pokemon Blue</td>
+<td>GB</td>
+<td>1996.0</td>
+<td>Role-Playing</td>
+<td>Nintendo</td>
+<td>11.27</td>
+<td>8.89</td>
+<td>10.22</td>
+<td>1.00</td>
+<td>31.37</td>
+</tr>
+<tr>
+<th>5</th>
+<td>6</td>
+<td>Tetris</td>
+<td>GB</td>
+<td>1989.0</td>
+<td>Puzzle</td>
+<td>Nintendo</td>
+<td>23.20</td>
+<td>2.26</td>
+<td>4.22</td>
+<td>0.58</td>
+<td>30.26</td>
+</tr>
+<tr>
+<th>6</th>
+<td>7</td>
+<td>New Super Mario Bros.</td>
+<td>DS</td>
+<td>2006.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>11.38</td>
+<td>9.23</td>
+<td>6.50</td>
+<td>2.90</td>
+<td>30.01</td>
+</tr>
+<tr>
+<th>7</th>
+<td>8</td>
+<td>Wii Play</td>
+<td>Wii</td>
+<td>2006.0</td>
+<td>Misc</td>
+<td>Nintendo</td>
+<td>14.03</td>
+<td>9.20</td>
+<td>2.93</td>
+<td>2.85</td>
+<td>29.02</td>
+</tr>
+<tr>
+<th>8</th>
+<td>9</td>
+<td>New Super Mario Bros. Wii</td>
+<td>Wii</td>
+<td>2009.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>14.59</td>
+<td>7.06</td>
+<td>4.70</td>
+<td>2.26</td>
+<td>28.62</td>
+</tr>
+<tr>
+<th>9</th>
+<td>10</td>
+<td>Duck Hunt</td>
+<td>NES</td>
+<td>1984.0</td>
+<td>Shooter</td>
+<td>Nintendo</td>
+<td>26.93</td>
+<td>0.63</td>
+<td>0.28</td>
+<td>0.47</td>
+<td>28.31</td>
+</tr>
+<tr>
+<th>18</th>
+<td>19</td>
+<td>Super Mario World</td>
+<td>SNES</td>
+<td>1990.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>12.78</td>
+<td>3.75</td>
+<td>3.54</td>
+<td>0.55</td>
+<td>20.61</td>
+</tr>
+<tr>
+<th>21</th>
+<td>22</td>
+<td>Super Mario Land</td>
+<td>GB</td>
+<td>1989.0</td>
+<td>Platform</td>
+<td>Nintendo</td>
+<td>10.83</td>
+<td>2.71</td>
+<td>4.18</td>
+<td>0.42</td>
+<td>18.14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cd9ab0ff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
